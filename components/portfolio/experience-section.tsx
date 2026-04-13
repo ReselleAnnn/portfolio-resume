@@ -4,27 +4,35 @@ import { useEffect, useRef, useState } from "react"
 
 const experiences = [
   {
-    title: "Web & Digital Content Associate",
-    company: "Most Holy Rosary Multi-Purpose Cooperative",
-    period: "Present",
+    title: "WEB & DIGITAL CONTENT ASSOCIATE",
+    company: "Most Holy Rosary Multi-Purpose Cooperative - Philippines | Rizal",
+    period: "Jan 2025 - Jan 2026",
     description:
-      "Managing web content and digital marketing initiatives. Developing and maintaining the cooperative's digital presence while creating engaging content for members and stakeholders.",
+      "Managed website updates and ensured mobile responsivenes, Automated internal reports and email notifications using Google Apps Scrip ,Leveraged AI tools to generate visual concepts, enhance photos, and streamline content production ,Designed graphics and multimedia materials to strengthen digital presence",
     technologies: ["Web Development", "Content Creation", "Digital Marketing"],
   },
   {
-    title: "IT Junior Developer",
-    company: "Internal Systems Development",
-    period: "Previous Role",
+    title: "IT JUNIOR DEVELOPER (PROJECT-BASED; ABSORBED AS INTERNAL STAFF)",
+    company: "Most Holy Rosary Multi-Purpose Cooperative - Philippines | Rizal",
+    period: "Feb 2024 - Jan 2025",
     description:
-      "Developed and maintained internal business systems using Laravel and Bootstrap. Worked with MSSQL databases to build efficient data-driven applications that streamlined business operations.",
+      "Developed and maintained web-based administrative systems, Created structured System Analysis and Design documentation, Improved internal workflows through system enhancementts.Tech stack: PHP (Laravel), HTML, CSS (Bootstrap Framework), JavaScript, MSSQL",
     technologies: ["Laravel", "Bootstrap", "MSSQL", "PHP"],
   },
   {
-    title: "Freelance Web Designer",
-    company: "US-Based Projects",
-    period: "Ongoing",
+    title: "FREELANCE WEB DEVELOEPR AND DESIGNER/ GRAPHIC DESIGNER(REMOTE PROJECTS) ",
+    company: "International & Local (Philippines) - USA | California| Open to Remote Work",
+    period: "Jan 2024 - Present",
     description:
-      "Providing UI/UX design and web development services for international clients. Leveraging AI tools to enhance productivity and deliver modern, responsive designs that meet client needs.",
+      "Led development of two U.S.-based websites, a Medical Billing Services platform and a Virtual Assistant productivity site, Designed responsive UI/UX layouts using Figma, Utilized AI-assisted tools for layout concepts, visual ideation, and content optimization, Collaborated with developers to deliver functional, user-centered web solutions",
+    technologies: ["UI/UX Design", "Web Design", "AI Tools", "Responsive Design"],
+  },
+  {
+    title: "TRADE MARKETING SPECIALIST",
+    company: "Brew Master International Inc. - Philippines | Pasig City",
+    period: "Oct 2023 - Feb 2024",
+    description:
+      "Spearheaded merchandising strategies and promotions as Distributor of Asia Brewery Inc. (Cobra, Summit, Absolute, Vitamilk & others),Ensured proper implementation of marketing collaterals and promotions across all supervised stores, Monitored and guided sales agents to execute correct promotional activities, Executed trade and consumer promotions to boost customer engagement, Managed and organized events to create a positive brand experience",
     technologies: ["UI/UX Design", "Web Design", "AI Tools", "Responsive Design"],
   },
 ]
@@ -54,9 +62,8 @@ export function ExperienceSection() {
     <section ref={sectionRef} id="experience" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div
-          className={`transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px flex-1 bg-border" />
@@ -70,11 +77,10 @@ export function ExperienceSection() {
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className={`group p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-all duration-300 ${
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-4"
-                }`}
+                className={`group p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-all duration-300 ${isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-4"
+                  }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
